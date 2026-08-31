@@ -1,10 +1,23 @@
-# Ckxkx / Personal CV
+# Zhu Huichen · 朱会琛 — 个人主页
 
-一个面向个人开发者的单页 CV 主页，使用原生 HTML、CSS 和 JavaScript 构建，无需构建步骤，可直接部署到 Vercel。
+个人单页主页，设计风格致敬 [krahets.com](https://krahets.com/)（Lato + 霞鹜文楷字体、OKLCH 中性配色、明暗双主题、GitHub star 徽章）。
+
+使用原生 HTML、CSS 和 JavaScript 构建，无需构建步骤，可直接部署到 Vercel。
+
+## 页面结构
+
+- **About** — 圆形头像、姓名（Zhu Huichen 朱会琛）、简介、联系方式（Email / GitHub / Resume / 所在地）
+- **Projects** — 4 个项目（MSEDNet、Plate Recognition、Recordthings、Code Memoirs），带 GitHub star 徽章
+- **Experience** — 教育经历与开源维护经历卡片
+- **Awards** — 8 项竞赛获奖
+
+## 功能特性
+
+- 明暗主题切换：遵循 `prefers-color-scheme`，可手动切换并记忆（localStorage），无闪烁
+- GitHub star 徽章：调用 GitHub API 获取仓库 star 数，localStorage 缓存 6 小时
+- 响应式：移动端单列布局
 
 ## 本地预览
-
-直接打开 `index.html`，或运行任意静态文件服务器：
 
 ```bash
 python -m http.server 4173
@@ -12,4 +25,4 @@ python -m http.server 4173
 
 ## Vercel
 
-这是零配置静态站点。将仓库导入 Vercel 后，Framework Preset 选择 `Other`，Build Command 留空，Output Directory 使用 `.` 即可。
+零配置静态站点。导入仓库后，Framework Preset 选 `Other`，Build Command 留空，Output Directory 使用 `.`。
