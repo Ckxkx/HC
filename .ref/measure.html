@@ -1,0 +1,19 @@
+<iframe id="f" src="krahets.html" style="width:900px;height:2400px;border:0"></iframe>
+<div id="out">loading...</div>
+<script>
+window.onload = function(){
+  setTimeout(function(){
+    var d = document.getElementById('f').contentDocument;
+    var out = document.getElementById('out');
+    function r(el){ var x = el.getBoundingClientRect(); return Math.round(x.left)+'->'+Math.round(x.right)+' (w:'+Math.round(x.width)+')'; }
+    out.innerHTML = [
+      'container: ' + r(d.querySelector('.container')),
+      'about__bio: ' + r(d.querySelector('.about__bio')),
+      'about__photo: ' + r(d.querySelector('.about__photo')),
+      'pub__thumb: ' + r(d.querySelector('.pub__thumb')),
+      'pub__authors: ' + r(d.querySelector('.pub__authors')),
+      'award__name: ' + r(d.querySelector('.award__name'))
+    ].join('<br>');
+  }, 1200);
+};
+</script>
