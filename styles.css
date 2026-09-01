@@ -103,9 +103,6 @@ a:hover { text-decoration: underline; }
 .about__bio {
   font-size: var(--text-base);
   color: var(--text-primary);
-  /* 左右边界对齐下方项目文本栏：头像(148)+gap(52)=200px vs 视频(240)+gap(20)=260px，相差 60px */
-  width: calc(100% - 60px);
-  margin-left: 60px;
   margin-bottom: 0.6em;
 }
 
@@ -462,32 +459,28 @@ section { margin-bottom: clamp(44px, 8vw, 68px); }
 
 /* ─── Language toggle ────────────────────────────────────── */
 .lang-toggle {
-  width: 32px;
-  height: 32px;
+  background: none;
+  border: none;
   padding: 0;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: background-color 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out;
+  transition: color 0.15s ease-out;
 }
 
-.lang-toggle svg { width: 18px; height: 18px; }
+.lang-toggle svg { width: 22px; height: 22px; }
 
 .lang-toggle:hover {
-  background-color: var(--accent-bg);
   color: var(--accent);
-  border-color: var(--accent-border);
 }
 
 .lang-toggle:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+  border-radius: 4px;
 }
 
 /* ─── Theme toggle ───────────────────────────────────────── */
@@ -532,7 +525,7 @@ section { margin-bottom: clamp(44px, 8vw, 68px); }
   .about__content { width: 100%; }
   .about__name { justify-content: center; }
 
-  .about__bio { width: 100%; margin-left: 0; }
+  .about__bio { max-width: none; }
   .contact { justify-content: center; }
 
   .pub, .book { flex-direction: column; }
