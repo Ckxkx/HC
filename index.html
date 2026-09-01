@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Zhu Huichen — undergraduate student at Shandong Normal University working on computer vision, deep learning and software development." />
+  <meta name="description" content="Zhu Huichen — undergraduate student at Shandong Normal University working on computer vision and edge intelligence." />
   <title>Zhu Huichen</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,12 +23,6 @@
 </head>
 
 <body>
-  <svg class="icon-sprite" aria-hidden="true" focusable="false">
-    <symbol id="icon-fa-star" viewBox="0 0 576 512">
-      <path d="M316.9 18.4C311.6 7.5 300.4 0 288 0s-23.6 7.5-28.9 18.4L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3L288 439.6l128.4 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18.4z"></path>
-    </symbol>
-  </svg>
-
   <div class="container">
 
     <!-- ── About ───────────────────────────────────────────── -->
@@ -40,16 +34,11 @@
             <span>Zhu Huichen</span>
             <span style="font-family: 'LXGW WenKai TC', serif; font-weight: 400; font-size: 1em; color: var(--text-primary); letter-spacing: 0.05em;">朱会琛</span>
           </h1>
-          <p class="about__bio">
-            I am an undergraduate student in Computer Science at Shandong Normal University,
-            working on computer vision, deep learning and software development.
-            I love to learn by building — from computer vision research practice to mini-program development,
-            I keep polishing my skills through open-source projects and hands-on experiments.
+          <p class="about__bio" data-i18n="bio1">
+            我目前就读于山东师范大学计算机科学与技术专业，具有扎实的专业基础，并具备良好的英语能力，荣获多项国家级荣誉，目前正在保研择校。
           </p>
-          <p class="about__bio">
-            I am passionate about open-source education and maintain my own projects on
-            <a href="https://github.com/Ckxkx" target="_blank" rel="noopener noreferrer">GitHub</a>,
-            sharing reusable code and notes so that every problem I meet becomes a stepping stone.
+          <p class="about__bio" data-i18n="bio2">
+            本科期间，我主要围绕计算机视觉与边缘智能开展研究，深度参与了智慧社区自主巡检机器人和植物病虫害精准诊断系统两个项目。平时喜欢打篮球、乒乓球和健身，对计算机相关的技术都非常感兴趣。
           </p>
           <nav class="contact" aria-label="Contact links">
             <a class="contact__link" href="mailto:huichen_zhu@qq.com" aria-label="Email">
@@ -60,12 +49,13 @@
             </a>
             <a class="contact__link" href="asserts/%E6%9C%B1%E4%BC%9A%E7%90%9B%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-              <span>Resume</span>
+              <span data-i18n="resume">简历</span>
             </a>
             <span class="contact__link contact__link--static" aria-label="Location">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Jinan, China</span>
+              <span data-i18n="location">山东 · 济南</span>
             </span>
+            <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" title="中 / EN">EN</button>
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
               <!-- icon injected by JS -->
             </button>
@@ -76,65 +66,37 @@
 
     <!-- ── Projects ────────────────────────────────────────── -->
     <section aria-labelledby="projects-title">
-      <h2 class="section-title" id="projects-title">Projects</h2>
+      <h2 class="section-title" id="projects-title" data-i18n="projectsTitle">项目经历</h2>
       <div class="pub-list">
 
         <article class="pub">
-          <img class="pub__thumb" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 135'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234f5bd5'/%3E%3Cstop offset='1' stop-color='%237b6cde'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='240' height='135' fill='url(%23g)'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='central' font-family='Lato,Arial,sans-serif' font-size='44' font-weight='700' fill='rgba(255,255,255,0.92)'%3EM%3C/text%3E%3C/svg%3E" alt="MSEDNet" />
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata">
+            <source src="asserts/%E9%A1%B9%E7%9B%AE/web/robot_web.mp4" type="video/mp4" />
+          </video>
           <div class="pub__body">
-            <span class="badge">2026 · Research</span>
-            <p class="pub__title">MSEDNet</p>
-            <p class="pub__authors">计算机视觉与深度学习相关的研究实践，包含模型设计、训练与实验记录。</p>
+            <span class="badge" data-i18n="p1badge">2025 · 计算机视觉 · 边缘智能</span>
+            <p class="pub__title" data-i18n="p1title">智慧社区自主巡检机器人</p>
+            <p class="pub__authors" data-i18n="p1desc">
+              面向智慧社区场景的自主巡检机器人。围绕计算机视觉与边缘智能技术，实现自主导航、环境感知与智能巡检，为社区安防与物业管理提供自动化解决方案。
+            </p>
             <div class="pill-links">
-              <a class="badge-link" href="https://github.com/Ckxkx/MSEDNet" target="_blank" rel="noopener noreferrer">
-                <span class="gh-badge" data-repo="Ckxkx/MSEDNet" aria-label="GitHub stars for Ckxkx/MSEDNet"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span>
-              </a>
-              <a class="pill" href="https://github.com/Ckxkx/MSEDNet" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="pill" href="asserts/%E9%A1%B9%E7%9B%AE/web/robot_web.mp4" target="_blank" rel="noopener noreferrer" data-i18n="p1video">▶ 演示视频</a>
             </div>
           </div>
         </article>
 
         <article class="pub">
-          <img class="pub__thumb" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 135'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2313a06b'/%3E%3Cstop offset='1' stop-color='%2340c981'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='240' height='135' fill='url(%23g)'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='central' font-family='Lato,Arial,sans-serif' font-size='44' font-weight='700' fill='rgba(255,255,255,0.92)'%3EP%3C/text%3E%3C/svg%3E" alt="Plate Recognition" />
+          <video class="pub__thumb" autoplay loop muted playsinline preload="metadata">
+            <source src="asserts/%E9%A1%B9%E7%9B%AE/web/plant_web.mp4" type="video/mp4" />
+          </video>
           <div class="pub__body">
-            <span class="badge">2025 · C++ · OCR</span>
-            <p class="pub__title">Plate Recognition</p>
-            <p class="pub__authors">车牌检测与识别项目，面向真实场景的计算机视觉应用实践。</p>
+            <span class="badge" data-i18n="p2badge">2025 · 计算机视觉 · 深度学习</span>
+            <p class="pub__title" data-i18n="p2title">植物病虫害精准诊断系统</p>
+            <p class="pub__authors" data-i18n="p2desc">
+              面向农业场景的植物病虫害精准识别与诊断系统。基于计算机视觉与深度学习技术，对作物病虫害进行快速检测与精准诊断，助力智慧农业。
+            </p>
             <div class="pill-links">
-              <a class="badge-link" href="https://github.com/Ckxkx/platerecognition" target="_blank" rel="noopener noreferrer">
-                <span class="gh-badge" data-repo="Ckxkx/platerecognition" aria-label="GitHub stars for Ckxkx/platerecognition"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span>
-              </a>
-              <a class="pill" href="https://github.com/Ckxkx/platerecognition" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="pub">
-          <img class="pub__thumb" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 135'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e86f2e'/%3E%3Cstop offset='1' stop-color='%23f5a623'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='240' height='135' fill='url(%23g)'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='central' font-family='Lato,Arial,sans-serif' font-size='44' font-weight='700' fill='rgba(255,255,255,0.92)'%3ER%3C/text%3E%3C/svg%3E" alt="Recordthings" />
-          <div class="pub__body">
-            <span class="badge">2026 · Mini Program</span>
-            <p class="pub__title">Recordthings</p>
-            <p class="pub__authors">智能库存管理小程序，让每一件物品都有迹可循。</p>
-            <div class="pill-links">
-              <a class="badge-link" href="https://github.com/Ckxkx/Recordthings" target="_blank" rel="noopener noreferrer">
-                <span class="gh-badge" data-repo="Ckxkx/Recordthings" aria-label="GitHub stars for Ckxkx/Recordthings"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span>
-              </a>
-              <a class="pill" href="https://github.com/Ckxkx/Recordthings" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="pub">
-          <img class="pub__thumb" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 135'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2334495e'/%3E%3Cstop offset='1' stop-color='%236b7f99'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='240' height='135' fill='url(%23g)'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='central' font-family='Lato,Arial,sans-serif' font-size='44' font-weight='700' fill='rgba(255,255,255,0.92)'%3EC%3C/text%3E%3C/svg%3E" alt="Code Memoirs" />
-          <div class="pub__body">
-            <span class="badge">2025 · Notes</span>
-            <p class="pub__title">Code Memoirs</p>
-            <p class="pub__authors">代码回忆录，沉淀 JavaScript、CSS、Java、C++ 等语言的学习笔记。</p>
-            <div class="pill-links">
-              <a class="badge-link" href="https://github.com/Ckxkx/Xcode" target="_blank" rel="noopener noreferrer">
-                <span class="gh-badge" data-repo="Ckxkx/Xcode" aria-label="GitHub stars for Ckxkx/Xcode"><svg class="gh-badge__icon" aria-hidden="true"><use href="#icon-fa-star"></use></svg><span class="gh-badge__count">...</span></span>
-              </a>
-              <a class="pill" href="https://github.com/Ckxkx/Xcode" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="pill" href="asserts/%E9%A1%B9%E7%9B%AE/web/plant_web.mp4" target="_blank" rel="noopener noreferrer" data-i18n="p2video">▶ 演示视频</a>
             </div>
           </div>
         </article>
@@ -144,24 +106,24 @@
 
     <!-- ── Experience ──────────────────────────────────────── -->
     <section aria-labelledby="exp-title">
-      <h2 class="section-title" id="exp-title">Experience</h2>
+      <h2 class="section-title" id="exp-title" data-i18n="expTitle">教育经历</h2>
       <div class="exp-grid">
 
         <div class="exp-card">
           <img class="exp-card__icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230071e3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 10v6M2 10l10-5 10 5-10 5z'/%3E%3Cpath d='M6 12v5c3 3 9 3 12 0v-5'/%3E%3C/svg%3E" alt="University" />
           <div class="exp-card__body">
-            <p class="exp-card__role">Undergraduate Student, <a href="https://www.sdnu.edu.cn/" target="_blank" rel="noopener noreferrer">Shandong Normal University</a></p>
-            <p class="exp-card__mentor">Computer Science · Computer Vision &amp; Deep Learning</p>
-            <p class="exp-card__period">2025 – Present</p>
+            <p class="exp-card__role" data-i18n="e1role">山东师范大学 · 计算机科学与技术</p>
+            <p class="exp-card__mentor" data-i18n="e1mentor">专业基础扎实 · 保研择校中</p>
+            <p class="exp-card__period" data-i18n="e1period">2025 – 至今</p>
           </div>
         </div>
 
         <div class="exp-card">
-          <img class="exp-card__icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230071e3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='16 18 22 12 16 6'/%3E%3Cpolyline points='8 6 2 12 8 18'/%3E%3C/svg%3E" alt="Open Source" />
+          <img class="exp-card__icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230071e3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'/%3E%3C/svg%3E" alt="Research" />
           <div class="exp-card__body">
-            <p class="exp-card__role">Open-Source Maintainer, <a href="https://github.com/Ckxkx" target="_blank" rel="noopener noreferrer">Ckxkx</a></p>
-            <p class="exp-card__mentor">Building CV projects &amp; mini programs on GitHub</p>
-            <p class="exp-card__period">2024 – Present</p>
+            <p class="exp-card__role" data-i18n="e2role">研究兴趣 · 计算机视觉与边缘智能</p>
+            <p class="exp-card__mentor" data-i18n="e2mentor">智慧社区巡检机器人 · 植物病虫害精准诊断</p>
+            <p class="exp-card__period" data-i18n="e2period">本科期间</p>
           </div>
         </div>
 
@@ -170,60 +132,60 @@
 
     <!-- ── Awards ──────────────────────────────────────────── -->
     <section aria-labelledby="awards-title">
-      <h2 class="section-title" id="awards-title">Awards</h2>
+      <h2 class="section-title" id="awards-title" data-i18n="awardsTitle">获奖荣誉</h2>
       <div class="award">
         <div class="award__left">
-          <p class="award__name">第七届全球校园人工智能算法精英大赛</p>
-          <p class="award__desc">国家一等奖 · 省级一等奖</p>
+          <p class="award__name" data-i18n="a1">第七届全球校园人工智能算法精英大赛</p>
+          <p class="award__desc" data-i18n="a1lvl">国家一等奖 · 省级一等奖</p>
         </div>
         <span class="award__year">2025</span>
       </div>
       <div class="award">
         <div class="award__left">
-          <p class="award__name">第十七届服务外包创新创业大赛</p>
-          <p class="award__desc">国家二等奖 · 省级一等奖</p>
+          <p class="award__name" data-i18n="a2">第十七届服务外包创新创业大赛</p>
+          <p class="award__desc" data-i18n="a2lvl">国家二等奖 · 省级一等奖</p>
         </div>
         <span class="award__year">2025</span>
       </div>
       <div class="award">
         <div class="award__left">
-          <p class="award__name">第 18 届中国大学生计算机设计大赛</p>
-          <p class="award__desc">国家三等奖 · 省级一等奖</p>
+          <p class="award__name" data-i18n="a3">第 18 届中国大学生计算机设计大赛</p>
+          <p class="award__desc" data-i18n="a3lvl">国家三等奖 · 省级一等奖</p>
         </div>
         <span class="award__year">2025</span>
       </div>
       <div class="award">
         <div class="award__left">
-          <p class="award__name">第 19 届中国大学生计算机设计大赛</p>
-          <p class="award__desc">国家三等奖 · 省级一等奖</p>
+          <p class="award__name" data-i18n="a4">第 19 届中国大学生计算机设计大赛</p>
+          <p class="award__desc" data-i18n="a4lvl">国家三等奖 · 省级一等奖</p>
         </div>
         <span class="award__year">2026</span>
       </div>
       <div class="award">
         <div class="award__left">
-          <p class="award__name">第十三届大学生新一代信息通信科技大赛</p>
-          <p class="award__desc">工程实践赛道 · 国家三等奖 · 省级一等奖</p>
+          <p class="award__name" data-i18n="a5">第十三届大学生新一代信息通信科技大赛</p>
+          <p class="award__desc" data-i18n="a5lvl">工程实践赛道 · 国家三等奖 · 省级一等奖</p>
         </div>
         <span class="award__year">2025</span>
       </div>
       <div class="award">
         <div class="award__left">
-          <p class="award__name">睿抗机器人开发者大赛 RAICOM 全国总决赛</p>
-          <p class="award__desc">大数据竞赛 · 国家三等奖 · 省级一等奖</p>
+          <p class="award__name" data-i18n="a6">睿抗机器人开发者大赛 RAICOM 全国总决赛</p>
+          <p class="award__desc" data-i18n="a6lvl">大数据竞赛 · 国家三等奖 · 省级一等奖</p>
         </div>
         <span class="award__year">2024</span>
       </div>
       <div class="award">
         <div class="award__left">
-          <p class="award__name">第十二届全国大学生统计建模大赛</p>
-          <p class="award__desc">山东赛区 · 省级二等奖</p>
+          <p class="award__name" data-i18n="a7">第十二届全国大学生统计建模大赛</p>
+          <p class="award__desc" data-i18n="a7lvl">山东赛区 · 省级二等奖</p>
         </div>
         <span class="award__year">2026</span>
       </div>
       <div class="award">
         <div class="award__left">
-          <p class="award__name">第十六届蓝桥杯全国软件和信息技术专业人才大赛</p>
-          <p class="award__desc">山东赛区 · 二等奖</p>
+          <p class="award__name" data-i18n="a8">第十六届蓝桥杯全国软件和信息技术专业人才大赛</p>
+          <p class="award__desc" data-i18n="a8lvl">山东赛区 · 二等奖</p>
         </div>
         <span class="award__year">2025</span>
       </div>
@@ -231,7 +193,7 @@
 
     <footer class="site-footer">
       <p>© 2026 Zhu Huichen (@Ckxkx)</p>
-      <p>Feel free to borrow this website's <a href="https://github.com/Ckxkx/HC" target="_blank" rel="noopener noreferrer">source code</a>.</p>
+      <p data-i18n="footerNote">本站源码开放，欢迎借鉴 <a href="https://github.com/Ckxkx/HC" target="_blank" rel="noopener noreferrer">source code</a>。</p>
     </footer>
 
   </div>

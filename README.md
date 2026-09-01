@@ -15,32 +15,23 @@
 
 ## 👋 关于我
 
-我是一名来自**山东师范大学**的计算机相关专业学生，热衷于**计算机视觉、深度学习与软件开发**。
+我目前就读于**山东师范大学计算机科学与技术专业**，具有扎实的专业基础，并具备良好的英语能力，荣获多项国家级荣誉，目前正在**保研择校**。
 
-我喜欢通过开源项目、课程实践和个人实验持续积累，把遇到的问题整理成可以复用的代码和笔记，用实践驱动学习。
+本科期间，我主要围绕**计算机视觉**和**边缘智能**开展研究，深度参与了**智慧社区自主巡检机器人**和**植物病虫害精准诊断系统**两个项目。平时喜欢打篮球、乒乓球和健身，对计算机相关的技术都非常感兴趣。
 
 - 📍 山东 · 济南
-- 🎓 山东师范大学（2025 – 至今）
-- 🔭 研究方向：计算机视觉、深度学习
-- 🌱 正在学习：PyTorch · OpenCV · 图像分割 · 目标检测
-- 💬 技术交流：微信 / Email 欢迎联系
+- 🎓 山东师范大学 · 计算机科学与技术（2025 – 至今）
+- 🔬 研究方向：计算机视觉 · 边缘智能
+- 🏆 多项国家级竞赛获奖，保研进行中
+- 💬 技术交流：Email / GitHub 欢迎联系
 
-## 🛠️ 技术栈
+## 📦 项目经历
 
-| 方向 | 技术 |
-| --- | --- |
-| 编程语言 | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/> |
-| AI / 深度学习 | <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/> |
-| 前端 / 小程序 | <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white"/> <img src="https://img.shields.io/badge/Uni--app-2C3E50?style=flat-square&logo=uni-app&logoColor=white"/> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/> |
+### 🤖 智慧社区自主巡检机器人
+面向智慧社区场景的自主巡检机器人。围绕**计算机视觉与边缘智能**技术，实现自主导航、环境感知与智能巡检，为社区安防与物业管理提供自动化解决方案。
 
-## 📦 项目
-
-| 项目 | 描述 | 技术 | 链接 |
-| --- | --- | --- | --- |
-| **MSEDNet** | 计算机视觉与深度学习研究实践，包含模型设计、训练与实验记录 | Python · CV | [GitHub](https://github.com/Ckxkx/MSEDNet) |
-| **Plate Recognition** | 车牌检测与识别，面向真实场景的计算机视觉应用 | C++ · OCR | [GitHub](https://github.com/Ckxkx/platerecognition) |
-| **Recordthings** | 智能库存管理小程序，让每一件物品都有迹可循 | Vue · Uni-app | [GitHub](https://github.com/Ckxkx/Recordthings) |
-| **Code Memoirs** | 代码回忆录，沉淀 JS/CSS/Java/C++ 学习笔记 | C++ · Notes | [GitHub](https://github.com/Ckxkx/Xcode) |
+### 🌱 植物病虫害精准诊断系统
+面向农业场景的植物病虫害精准识别与诊断系统。基于**计算机视觉与深度学习**技术，对作物病虫害进行快速检测与精准诊断，助力智慧农业。
 
 ## 🏆 获奖经历
 
@@ -57,7 +48,7 @@
 
 ## 📮 联系我
 
-- 🌐 个人主页：[huichen.cc.cd](https://huichen.cc.cd)
+- 🌐 个人主页：[huichen.cc.cd](https://huichen.cc.cd)（支持中/英切换）
 - 📧 Email：[huichen_zhu@qq.com](mailto:huichen_zhu@qq.com)
 - 🐙 GitHub：[@Ckxkx](https://github.com/Ckxkx)
 - 📄 个人简历：[朱会琛个人简历.pdf](asserts/朱会琛个人简历.pdf)
