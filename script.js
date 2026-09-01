@@ -104,7 +104,7 @@ function applyLang(lang) {
     var key = el.getAttribute('data-i18n');
     if (dict[key]) el.innerHTML = dict[key];
   });
-  langBtn.textContent = lang === 'zh' ? 'EN' : '中';
+  langBtn.setAttribute('title', lang === 'zh' ? 'Switch to English' : '切换到中文');
   langBtn.setAttribute('aria-label', lang === 'zh' ? 'Switch to English' : '切换到中文');
   localStorage.setItem('lang', lang);
 }
