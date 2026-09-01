@@ -463,13 +463,13 @@ section { margin-bottom: clamp(44px, 8vw, 68px); }
 
 /* ─── Language toggle ────────────────────────────────────── */
 .lang-toggle {
-  position: relative;
   width: 32px;
   height: 32px;
   padding: 0;
   border-radius: 50%;
   border: 1px solid var(--border);
   background: transparent;
+  color: var(--text-muted);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -478,38 +478,12 @@ section { margin-bottom: clamp(44px, 8vw, 68px); }
   transition: background-color 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out;
 }
 
-.lang-toggle__cn,
-.lang-toggle__en {
-  position: absolute;
-  line-height: 1;
-  font-weight: 600;
-}
-
-.lang-toggle__cn {
-  top: 5px;
-  left: 6px;
-  font-family: 'LXGW WenKai TC', 'Kaiti SC', 'STKaiti', serif;
-  font-size: 13px;
-  color: var(--accent);
-  transform: rotate(-8deg);
-}
-
-.lang-toggle__en {
-  bottom: 5px;
-  right: 6px;
-  font-family: var(--serif);
-  font-size: 12px;
-  color: var(--text-primary);
-  transform: rotate(-8deg);
-}
+.lang-toggle svg { width: 18px; height: 18px; }
 
 .lang-toggle:hover {
   background-color: var(--accent-bg);
-  border-color: var(--accent-border);
-}
-
-.lang-toggle:hover .lang-toggle__en {
   color: var(--accent);
+  border-color: var(--accent-border);
 }
 
 .lang-toggle:focus-visible {
